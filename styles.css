@@ -9,8 +9,8 @@ body {
 
 .team-members {
     position: absolute;
-    width: 300px; /* Adjust as needed */
-    height: 300px; /* Adjust as needed */
+    width: 400px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
