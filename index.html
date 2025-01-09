@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Interface</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-black text-white min-h-screen relative">
     <!-- Central Line that starts from the very top -->
@@ -31,20 +31,32 @@
         <!-- Content Grid -->
         <div class="grid md:grid-cols-2 gap-12 relative w-full text-center">
             <!-- Left Column -->
-            <div class="space-y-4">
+            <div class="team-column" id="left-team">
                 <div class="text-6xl font-bold">4</div>
                 <div class="text-base tracking-wide">
                     BUILDING THE FUND<br>
                     IN AUSTRALIA
                 </div>
+                <div class="team-members">
+                    <p>John Doe</p>
+                    <p>Jane Smith</p>
+                    <p>Michael Lee</p>
+                    <p>Emily Brown</p>
+                </div>
             </div>
             
             <!-- Right Column -->
-            <div class="space-y-4">
+            <div class="team-column" id="right-team">
                 <div class="text-6xl font-bold">4</div>
                 <div class="text-base tracking-wide">
                     SUPPORTING FOUNDERS<br>
                     AROUND THE WORLD
+                </div>
+                <div class="team-members">
+                    <p>Anna White</p>
+                    <p>David Black</p>
+                    <p>Olivia Green</p>
+                    <p>Chris Blue</p>
                 </div>
             </div>
         </div>

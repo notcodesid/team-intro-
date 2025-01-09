@@ -1,0 +1,53 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.team-column {
+    position: relative;
+}
+
+.team-members {
+    position: absolute;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-members p {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin: 0;
+}
+
+/* Position each team member */
+.team-members p:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team-members p:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.team-members p:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team-members p:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.team-column:hover .team-members p {
+    opacity: 1;
+}
